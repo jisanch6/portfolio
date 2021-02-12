@@ -1,0 +1,44 @@
+.container {
+    max-width: 120rem;
+    margin: 7rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5);
+
+    min-height: 50rem;
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary-dark);
+    color: var(--color-grey-light-1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-aboutMe {
+    font-size: 1.2rem;
+    background-color: var(--color-grey-light-5);
+    border-bottom: 1px solid var(--color-grey-dark-3);
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    align-items: center;
+    padding: 8rem 4rem 10rem 4rem;
+}
+
+.section-projects {
+    font-size: 1.2rem;
+    background-color: var(--color-grey-light-4);
+
+    // display:grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // grid-row-gap: 3rem;
+    padding: 6rem 4rem;
+    // align-items: center;
+}
