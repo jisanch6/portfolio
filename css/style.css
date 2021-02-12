@@ -6,6 +6,7 @@
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
+  --color-grey-light-5: #ebe9e9;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999; }
@@ -50,6 +51,21 @@ body {
   justify-content: space-between;
   align-items: center; }
 
+.section-aboutMe {
+  font-size: 1.2rem;
+  background-color: var(--color-grey-light-5);
+  border-bottom: 1px solid var(--color-grey-dark-3);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  align-items: center;
+  padding: 8rem 4rem 10rem 4rem; }
+
+.section-projects {
+  font-size: 1.2rem;
+  background-color: var(--color-grey-light-4);
+  padding: 8rem 4rem; }
+
 .logo {
   height: 3.5rem;
   margin-left: 3rem; }
@@ -63,10 +79,57 @@ body {
   display: flex; }
   .nav__item {
     margin-right: 2rem; }
-  .nav__item:hover, .nav__item:active {
-    border-bottom: 1px solid var(--color-grey-light-1); }
+  .nav__link:hover, .nav__link:active {
+    border-bottom: 1px solid var(--color-grey-light-1);
+    color: var(--color-grey-dark-3); }
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    color: var(--color-grey-light-1); }
+    color: var(--color-grey-light-3); }
+
+.heading-primary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  letter-spacing: .4rem;
+  padding-bottom: 1.6rem; }
+  .heading-primary--centered {
+    text-align: center;
+    border-bottom: 1px solid var(--color-primary-light); }
+
+.aboutMe {
+  color: var(--color-grey-dark-1);
+  font-weight: 400; }
+  .aboutMe__summary {
+    font-size: 2rem;
+    padding-bottom: .8rem;
+    letter-spacing: .2rem; }
+  .aboutMe__description {
+    font-size: 1.6rem;
+    letter-spacing: .1rem; }
+
+.img {
+  display: flex;
+  justify-content: center; }
+  .img__user {
+    border-radius: 50%;
+    z-index: 10;
+    align-self: center;
+    border: 5px solid var(--color-grey-light-1);
+    transform: translate(40%, 0); }
+  .img__user--background {
+    background-color: var(--color-primary-light);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    transform: translate(-35%, 10%);
+    z-index: 9; }
+
+.heading-secondary {
+  font-size: 2.5rem; }
+
+.project-showcase {
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
