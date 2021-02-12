@@ -64,7 +64,7 @@ body {
 .section-projects {
   font-size: 1.2rem;
   background-color: var(--color-grey-light-4);
-  padding: 8rem 4rem; }
+  padding: 6rem 4rem; }
 
 .logo {
   height: 3.5rem;
@@ -97,7 +97,8 @@ body {
   padding-bottom: 1.6rem; }
   .heading-primary--centered {
     text-align: center;
-    border-bottom: 1px solid var(--color-primary-light); }
+    border-bottom: 1px solid var(--color-primary-light);
+    margin-bottom: 3.5rem; }
 
 .aboutMe {
   color: var(--color-grey-dark-1);
@@ -131,5 +132,24 @@ body {
   font-size: 2.5rem; }
 
 .project-showcase {
-  background-color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 3.5rem;
+  column-gap: 1.5rem; }
+  .project-showcase__box {
+    padding: 1rem .5rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .project-showcase__img {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: stretch; }
+    .project-showcase__img--one, .project-showcase__img--two {
+      height: 26rem; }
+    .project-showcase__img--one {
+      grid-column: 2 / 3; }
+    .project-showcase__img--two {
+      align-self: flex-end;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3; }
