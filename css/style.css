@@ -89,16 +89,25 @@ body {
     color: var(--color-grey-light-3); }
 
 .heading-primary {
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--color-primary-light);
-  letter-spacing: .4rem;
-  padding-bottom: 1.6rem; }
+  letter-spacing: .3rem;
+  padding-bottom: 1.6rem;
+  word-spacing: .4rem; }
   .heading-primary--centered {
     text-align: center;
-    border-bottom: 1px solid var(--color-primary-light);
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.5rem;
+    margin-bottom: 3rem; }
+    .heading-primary--centered::after {
+      display: block;
+      height: .2rem;
+      background-color: var(--color-primary-light);
+      content: " ";
+      margin: 0 auto;
+      margin-top: 2rem;
+      width: 10rem; }
 
 .aboutMe {
   color: var(--color-grey-dark-1);
@@ -106,10 +115,12 @@ body {
   .aboutMe__summary {
     font-size: 2rem;
     padding-bottom: .8rem;
-    letter-spacing: .2rem; }
+    letter-spacing: .15rem;
+    word-spacing: .25rem; }
   .aboutMe__description {
     font-size: 1.6rem;
-    letter-spacing: .1rem; }
+    letter-spacing: .1rem;
+    word-spacing: .12rem; }
 
 .img {
   display: flex;
