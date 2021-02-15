@@ -1,17 +1,19 @@
 :root {
     --color-primary: #223139;
     --color-primary-light: #3c5563;
+    --color-primary-light-2: #4c697a;
     --color-primary-dark: #2f434e;
 
     --color-grey-light-1: #faf9f9;
     --color-grey-light-2: #f4f2f2;
     --color-grey-light-3: #f0eeee;
     --color-grey-light-4: #ccc;
-    --color-grey-light-5: #ebe9e9;
+    --color-grey-light-5: #e4e3e3;
     
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
+    --color-grey-dark-4: #a8a8a8;
 
 }
 
@@ -41,4 +43,5 @@ body {
     background-repeat: no-repeat;
     
     min-height: 100vh;
+ 
 }
